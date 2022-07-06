@@ -1,2 +1,1 @@
-# BOJ
 baekjoon hub 
