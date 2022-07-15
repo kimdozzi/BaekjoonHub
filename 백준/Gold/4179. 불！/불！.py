@@ -32,7 +32,7 @@ while queue:
         if 0 <= nx < n and 0 <= ny < m and graph[nx][ny] != '#':
             # 지훈이 이동
             if time > -1 and graph[nx][ny] == '.':
-                graph[nx][ny] = '_'
+                graph[nx][ny] = 'J'
                 queue.append((time + 1, nx, ny))
             # 불 퍼뜨리기
             elif time == -1 and graph[nx][ny] != 'F':
