@@ -4,11 +4,10 @@ input = sys.stdin.readline
 
 n, m = map(int, input().split())
 graph = []
-
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 ans = 'IMPOSSIBLE'
-flag = 0
+
 for i in range(n):
     graph.append(list(input().rstrip()))
     if 'J' in graph[i]:
@@ -24,7 +23,6 @@ while queue:
     # 지훈이 탈출
     if time > -1 and graph[x][y] != 'F' and (x == 0 or y == 0 or x == n - 1 or y == m - 1):
         ans = time + 1
-        flag = 1
         print(ans)
         break
 
@@ -40,5 +38,5 @@ while queue:
             elif time == -1 and graph[nx][ny] != 'F':
                 graph[nx][ny] = 'F'
                 queue.append((-1, nx, ny))
-if flag == 0 :
+else:
     print(ans)
