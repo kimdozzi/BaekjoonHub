@@ -1,5 +1,6 @@
 # BFS와 DFS
 import sys
+sys.setrecursionlimit(10**6)
 from collections import deque
 
 
@@ -40,7 +41,7 @@ for i in range(1, n+1):
 
 for i in range(1,n+1) :
     if visited[i] == False :
-        bfs(graph, i, visited)
+        dfs(graph, i, visited)
         ans += 1
 
 #print(*graph, sep='\n')
