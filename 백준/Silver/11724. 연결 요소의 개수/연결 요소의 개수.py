@@ -1,6 +1,6 @@
 # BFS와 DFS
 import sys
-sys.setrecursionlimit(10**6)
+sys.setrecursionlimit(10**5)
 from collections import deque
 
 
